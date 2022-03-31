@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './components/webspider-toile-blanche.png';
+
+import './components/home.css';
+{/* import './App.css';*/}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <section className="home">
+      <div className="searchBloc">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <h1>Chercher un film</h1>
+        <input type="text" id="filmName" name="filmName" required minlength="4" maxlength="200" size="10"/>
+      </div>
+    </section>
   );
 }
 
